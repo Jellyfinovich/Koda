@@ -50,11 +50,6 @@ body {
 border-radius: 20px !important;
 }
 
-.card:hover {
-  /* Any hover effects like a slight scale, shadow, etc. */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
-
 .card .metadata {
     position: absolute;
     bottom: 0;
