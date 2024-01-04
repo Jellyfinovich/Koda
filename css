@@ -153,10 +153,6 @@ button:hover, .button:hover {
 }
 
 @media (max-width: 768px) {
-  .top-nav {
-    /* Adjust navigation for mobile */
-  }
-
   .card {
     width: 120px;
     height: 216px;
