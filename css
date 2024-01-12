@@ -1100,17 +1100,18 @@ html {
   }
   
   @media all and (min-width: 70em){
+    /*Галочка наложения*/
     .cardOverlayFab-primary {
-      background-color: #00000000;
+      background-color: #d3c9d19d;
     }
+    /*Нижние кнопки наложения*/
     .cardOverlayButtonIcon {
-      background-color: #00000000 !important;
+      background-color: #bac7b888 !important;
     }
+    /*Прозрачность наложения*/
     .cardOverlayContainer {
-        background-color: rgba(0, 0, 0, 0.5) !important;
-  /* Simulate an outer border using box-shadow */
-  box-shadow: 0 0 0 5px #4A72FF; /* Adjust the color and size as needed */
-  /* Rest of your styles... */
+      background-color: rgba(255, 255, 255, 0) !important;
+      box-shadow: 0 0 0 5px #4A72FF;
     }
   }
   @media all and (max-width: 70em){
@@ -1121,7 +1122,8 @@ html {
       padding: 0.3em;
     }
     .cardOverlayContainer {
-        border: solid 5px #4A72FF !important;
+        background-color: rgba(255, 255, 255, 0) !important;
+        box-shadow: 0 0 0 5px #4A72FF;
     }
   }
   
