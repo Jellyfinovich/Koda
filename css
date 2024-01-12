@@ -518,20 +518,20 @@ html {
     color: #00a4dc;
 }
 
-/*Custom CSS*/
-
-body, .emby-button, .textActionButton, .listItem, .cardText, .card, .sectionTitle, .header {
+  body, .emby-button, .textActionButton, .listItem, .cardText, .card, .sectionTitle, .header {
     font-family: 'SF UI Display', sans-serif;
-}
+ }
   
   :root {--rounding: 5px;}
   
   /*Narrow margins, theme main page*/
   .cardBox-bottompadded {
       margin-bottom: 0.6em !important;
+      margin-left: 5px !important;
   }
   .itemsContainer > .card > .cardBox {
       margin-right: 0.8em;
+      margin-left: 5px !important;
   }
   .raised.homeLibraryButton {
       background: rgba(0, 0, 0, 0.3) !important;
@@ -921,9 +921,26 @@ body, .emby-button, .textActionButton, .listItem, .cardText, .card, .sectionTitl
     border-bottom-left-radius: var(--rounding);
     border-bottom-right-radius: var(--rounding);
   }
-  .cardOverlayContainer {
-      border-radius: 20px !important;
+  
+  .cardContent-button, 
+  .cardContent-shadow, 
+  .itemDetailImage, 
+  .cardOverlayButton-hover, 
+  .cardOverlayContainer, 
+  .cardImageContainer, 
+  .cardPadder, 
+  .listItemImage, 
+  .listItemImageButton, 
+  .listItemButton, 
+  .headerButton, 
+  .paper-icon-button-light, 
+  .innerCardFooter, 
+  .blurhash-canvas, 
+  .actionSheetMenuItem:hover, 
+  .dialog {
+    border-radius: 20px !important;
   }
+
   .primaryImageWrapper > img,
   .toast,
   .paperList,
@@ -967,7 +984,7 @@ body, .emby-button, .textActionButton, .listItem, .cardText, .card, .sectionTitl
   .upNextDialog-poster-img,
   .upNextContainer,
   .cardOverlayButtonIcon {
-    border-radius: 20px !important;
+    border-radius: var(--rounding);
   }
   .osdPoster img {
     border-radius: var(--rounding); border: none;
@@ -1068,7 +1085,12 @@ body, .emby-button, .textActionButton, .listItem, .cardText, .card, .sectionTitl
 
   .transcodingProgress>div {
     background-color: #FF0000 !important;
-}
+  }
+  
+  .innerCardFooter.fullInnerCardFooter.innerCardFooterClear {
+    border-radius: 0px !important; 
+    background: rgba(0,0,0,0);
+  }
   
   /*Accommodate mobile and set positions, I think*/
   .cardIndicators,
@@ -1085,7 +1107,10 @@ body, .emby-button, .textActionButton, .listItem, .cardText, .card, .sectionTitl
       background-color: #00000000 !important;
     }
     .cardOverlayContainer {
-      background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0, 0, 0, 0.5) !important;
+  /* Simulate an outer border using box-shadow */
+  box-shadow: 0 0 0 5px #4A72FF; /* Adjust the color and size as needed */
+  /* Rest of your styles... */
     }
   }
   @media all and (max-width: 70em){
@@ -1094,6 +1119,9 @@ body, .emby-button, .textActionButton, .listItem, .cardText, .card, .sectionTitl
     }
     .cardOverlayButton {
       padding: 0.3em;
+    }
+    .cardOverlayContainer {
+        border: solid 5px #4A72FF !important;
     }
   }
   
@@ -1552,4 +1580,3 @@ body, .emby-button, .textActionButton, .listItem, .cardText, .card, .sectionTitl
   .defaultCardBackground5 {
       background-color: #666666;
   }
-  
