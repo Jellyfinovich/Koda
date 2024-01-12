@@ -1,5 +1,12 @@
 /*Custom Monochromic CSS+*/
 
+/*Font*/
+body, .emby-button, .textActionButton, .listItem, .cardText, .card, .sectionTitle, .header {
+    font-family: 'SF UI Display', sans-serif;
+}
+
+/**/
+
 /*Modified progress bar, play and item menu buttons*/
   .innerCardFooter.fullInnerCardFooter.innerCardFooterClear {
     border-radius: 0px !important; 
@@ -28,7 +35,71 @@
     background-color: #FF0000 !important;
 }
 
+/**/
+
 /*Border-radius for Card*/
-.cardOverlayContainer {
-      border-radius: 20px !important;
+
+ .cardContent-button, 
+  .cardContent-shadow, 
+  .itemDetailImage, 
+  .cardOverlayButton-hover, 
+  .cardOverlayContainer, 
+  .cardImageContainer, 
+  .cardPadder, 
+  .listItemImage, 
+  .listItemImageButton, 
+  .listItemButton, 
+  .headerButton, 
+  .paper-icon-button-light, 
+  .innerCardFooter, 
+  .blurhash-canvas, 
+  .actionSheetMenuItem:hover, 
+  .dialog {
+    border-radius: 20px !important;
+  }
+
+  .primaryImageWrapper > img,
+  .toast,
+  .paperList,
+  .cardContent,
+  .sessionNowPlayingInnerContent, 
+  .listItem:hover, 
+  .cardImage,
+  .fab,
+  .raised,
+  .multiSelectCheckboxOutline,
+  .itemSelectionPanel,
+  .cardContent-button, 
+  .cardContent-shadow, 
+  .itemDetailImage, 
+  .cardOverlayButton-hover,
+  .cardImageContainer,
+  .cardPadder,
+  .listItemImage,
+  .listItemImageButton,
+  .listItemButton,
+  .headerButton,
+  .paper-icon-button-light,
+  .innerCardFooter,
+  .blurhash-canvas,
+  .dialog,
+  .countIndicator,
+  .playedIndicator,
+  .listItemIcon,
+  .listItem-border,
+  .button-flat,
+  .visualCardBox,
+  .checkboxOutline,
+  .emby-select-withcolor,
+  .chapterThumbTextContainer,
+  .chapterThumbContainer,
+  .chapterThumb,
+  .emby-input, 
+  .emby-textarea, 
+  .emby-select-withcolor,
+  .nowPlayingPageImage,
+  .upNextDialog-poster-img,
+  .upNextContainer,
+  .cardOverlayButtonIcon {
+    border-radius: var(--rounding);
   }
