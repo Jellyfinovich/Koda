@@ -1,4 +1,6 @@
-  /*Modified progress bar, play and item menu buttons*/
+/*Custom Monochromic CSS+*/
+
+/*Modified progress bar, play and item menu buttons*/
   .innerCardFooter.fullInnerCardFooter.innerCardFooterClear {
     border-radius: 0px !important; 
     background: rgba(0,0,0,0.7);
@@ -25,3 +27,8 @@
   .transcodingProgress>div {
     background-color: #FF0000 !important;
 }
+
+/*Border-radius for Card*/
+.cardOverlayContainer {
+      border-radius: 20px !important;
+  }
